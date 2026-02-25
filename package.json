@@ -1,0 +1,14 @@
+```json
+{
+  "name": "onchain-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cargo build-bpf --manifest-path=./Cargo.toml --bpf-out-dir=./dist/",
+    "deploy": "solana program deploy dist/onchain_backend.so"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.14.0"
+  }
+}
+```
+This code provides a basic example of an on-chain backend system using Rust for Solana. It demonstrates CRUD operations for a simple "message" data structure. Note that this is a simplified example and may not cover all the requirements of a production-ready system.
